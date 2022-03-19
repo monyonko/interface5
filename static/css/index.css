@@ -1,0 +1,142 @@
+
+
+/* Slideshow container */
+.carousel {
+  width: 100vw;
+  height: 66vh;
+  overflow: hidden;
+}
+.carousel .mySlides{
+  display:none;
+}
+.carousel img{
+  width: 80vw;
+  height:58vh;
+  margin: 1vh 10vw 1vh 10vw;  
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 70%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #000;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #000;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+.content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.content .product{
+  width: 20vw;
+  height:30vh;
+  margin: 3vh;
+
+}
+.product img{
+  width:20vw;
+  height:25vh;
+}
+.product span, .product2 span{
+  width:inherit;
+  text-align:center ;
+  font-size: 2.5vh;
+}
+
+.product .itemPrice{
+  float: left;
+  border: 0.3vh solid black;
+  border-radius: 0.5vh;
+  font-weight: 800;
+}
+.product button{
+  float: right;
+  height: 4vh;
+  background-color: #00d369;
+}
+.product2{
+  text-align: center;
+  font-size: 3vh; 
+}
+.product2 .itemPrice{
+  font-weight: 800;
+}
+.product2 img{
+  width: 50vw;
+  height:40vh; 
+}
+.product2 button{
+  margin: auto;
+  background-color: #07f87f;
+  height: 5vh;
+}

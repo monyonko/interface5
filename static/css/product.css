@@ -1,0 +1,48 @@
+.productContainer{
+    justify-items: center;
+    text-align: center;
+}
+.productContainer button{
+    margin: auto;
+    height: 5vh;
+    background-color: rgb(30, 190, 78);
+}
+.mainProduct{
+    margin-bottom: 2vh;
+}
+.mainProduct .prodPrice{
+    font-size: 3vh;
+}
+
+.productContainer .title{
+    border-top: 0.5vh solid black; 
+    text-align: left;  
+    font-size: 3vh;
+    clear: left;
+}
+.productContainer h3{
+    text-align: left;
+}
+.mainProduct img{
+    width:30vw;
+    height: 60vh;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 4vh;
+    border: 1px solid black;
+    box-shadow: 1px 2px;
+}
+
+.recommendations{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-items: center;
+    margin: 2vh;
+}
+.recommendations .product{
+    flex:1;
+
+}
+.recommendations .product img{
+    height:30vh;
+}
